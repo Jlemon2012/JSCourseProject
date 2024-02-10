@@ -1,5 +1,6 @@
 .categories--modal h2, .categories--modal p, .categories--modal h3 {
     color: var(--text-clr);
+    text-align: center;
 }
 
 .socials__container img {
@@ -15,7 +16,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 75px;
+    gap: 100px;
 }
 
 .categories--modal ul img {
@@ -23,11 +24,36 @@
     max-height: 100px;
 }
 
+.categories--modal h2 {
+    font-size: 38px;
+    text-align: center;
+}
+
+.categories--modal p {
+    font-size: 16px;
+    text-align: center;
+}
 .categories--modal__container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 4fr 0.3fr;
     justify-items: center;
     align-items: center;
-    row-gap: 5px;
+    row-gap: 15px;
+}
+
+.categories--modal--select__container {
+    backdrop-filter: blur(300px);
+    padding: 50px;
+}
+
+.socials__container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.socials__container img {
+    width: 30px;
+    height: 30px;
 }
