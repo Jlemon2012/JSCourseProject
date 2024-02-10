@@ -1,28 +1,43 @@
 <section class="filter container">
   <div class="filter__container">
-    <button class="filter__button">Filter</button>
-    <fieldset class="filter__elements">
-      <div class="checkbox__container">
-        <input type="checkbox" name="1" />
-        <label for="1">filter 1</label>
+    <a class="filter__button" herf="#">Filter</a>
+    <form class="filter__form">
+      <div class="filter__elements">
+        <fieldset>
+          <legend>filter 1</legend>
+          <select id="category" name="category">
+            <option value="all">All categories</option>
+            <option value="value1">Value 1</option>
+            <option value="value2">Value 2</option>
+            <option value="value3">Value 3</option>
+          </select>
+        </fieldset>
+        <fieldset class="filter__elements">
+          <legend>filter 2</legend>
+          <select id="category" name="category">
+            <option value="all">All categories</option>
+            <option value="value1">Value 1</option>
+            <option value="value2">Value 2</option>
+            <option value="value3">Value 3</option>
+          </select>
+        </fieldset>
+        <fieldset class="filter__elements">
+          <legend>filter 3</legend>
+          <select id="category" name="category">
+            <option value="all">All categories</option>
+            <option value="value1">Value 1</option>
+            <option value="value2">Value 2</option>
+            <option value="value3">Value 3</option>
+          </select>
+        </fieldset>
       </div>
-      <div class="checkbox__container">
-        <input type="checkbox" name="2" />
-        <label for="2">filter 2</label>
+      <div class="filter__button--all">
+        <a href="#" class="filter__select--all"
+          ><img
+            src="../img/disclose_all_properties.png"
+            alt="Button for all properties"
+        /></a>
       </div>
-      <div class="checkbox__container">
-        <input type="checkbox" name="3" />
-        <label for="3">filter 3</label>
-      </div>
-      <div class="checkbox__container">
-        <input type="checkbox" name="4" />
-        <label for="4">filter 4</label>
-      </div>
-      <div class="checkbox__container">
-        <input type="checkbox" name="5" />
-        <label for="5">filter 5</label>
-      </div>
-      <button class="filter__button--showall">=></button>
-    </fieldset>
+    </form>
   </div>
 </section>

@@ -1,5 +1,6 @@
 .header {
     position: fixed;
+    top: 0;
     width: 100%;
     background: linear-gradient(to right, #001f3f, #001a35);
 }
@@ -9,6 +10,7 @@
     grid-template-columns: repeat(3, 1fr);
     justify-items: auto;
     align-items: center;
+    padding: 25px;
 }
 
 .header img {
