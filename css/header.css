@@ -1,0 +1,42 @@
+.header {
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(to right, #001f3f, #001a35);
+}
+
+.header__menu--container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: auto;
+    align-items: center;
+}
+
+.header img {
+    width: 30px;
+    height: 30px;
+}
+
+.search__container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.search__container input {
+    width: 300px;
+    height: 30px;
+    border-radius: 25px;
+}
+
+.menu__container {
+    display: grid;
+    justify-content: end;
+    align-items: center;
+}
+
+.menu__container li {
+    list-style: none;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+}

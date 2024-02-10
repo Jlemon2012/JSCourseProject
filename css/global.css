@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Inter:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    scroll-behavior: smooth;
+    font-family: Handlee, sans-serif;
+    --menu-buttons-clr: orange;
+    --buttons-clr: white;
+    background-image: url("../img/background_picture.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+img {
+    display: block;
+    max-width: 100%
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: var(--menu-buttons-clr);
+}
+
+.container {
+    padding: 20px;
+}
+
+@media (min-width: 620px) {
+    .container {
+        max-width: 767px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 1059px;
+    }
+}
+
+@media (min-width: 1060px) {
+    .container {
+        max-width: 100%;
+    }
+}
