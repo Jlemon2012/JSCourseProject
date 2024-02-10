@@ -1,6 +1,6 @@
 .shop__container {
     display: grid;
-    grid-template-columns: 1fr 7fr;
+    grid-template-columns: 1.5fr 6fr;
     grid-template-rows: auto;
     grid-template-areas: 
     ". shop"
@@ -23,8 +23,8 @@
     align-items: center;
     margin-right: 10px;
     margin-left: 10px;
-    margin-top: 75px;
-    margin-bottom: 75px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .category__container img {
@@ -44,8 +44,8 @@
 
 .item__container {
     display: grid;
-    grid-template-columns: 0.25fr 0.25fr 0.25fr;
-    grid-template-rows: 0.25fr 0.25fr 0.25fr;
+    grid-template-columns: 0.3fr 0.3fr 0.3fr;
+    grid-template-rows: 0.3fr 0.3fr 0.3fr;
     column-gap: 100px;
     row-gap: 30px;
     margin-left: 30px;

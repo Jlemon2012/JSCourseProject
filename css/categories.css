@@ -1,0 +1,33 @@
+.categories--modal h2, .categories--modal p, .categories--modal h3 {
+    color: var(--text-clr);
+}
+
+.socials__container img {
+    width: 10px;
+    height: 10px;
+}
+
+.categories--modal li {
+    list-style: none;
+}
+
+.categories--modal ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 75px;
+}
+
+.categories--modal ul img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.categories--modal__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    justify-items: center;
+    align-items: center;
+    row-gap: 5px;
+}
