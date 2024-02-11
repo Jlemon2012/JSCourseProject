@@ -22,21 +22,27 @@ $(document).ready(() => {
             case "Printers":
                 printerCategory.toggleClass("hidden");
                 itemsMenu.addClass("hidden");
+                break;
             case "Monitors":
                 monitorCategory.toggleClass("hidden");
                 itemsMenu.addClass("hidden");
+                break;
             case "Headsets":
                 headsetsCategory.toggleClass("hidden");
                 itemsMenu.addClass("hidden");
+                break;
             case "Storage":
                 storageCategory.toggleClass("hidden");
                 itemsMenu.addClass("hidden");
+                break;
             case "Processors":
                 processorsCategory.toggleClass("hidden");
                 itemsMenu.addClass("hidden");
+                break;
             case "Mouse":
                 mouseCategory.toggleClass("hidden");
                 itemsMenu.addClass("hidden");
+                break;
         }
     }
 })
