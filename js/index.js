@@ -1,3 +1,4 @@
 document.addEventListener("partialsLoaded", () => {
-    import("header.js");
+    import('./login.js');
+    import('./admin-panel.js');
 });

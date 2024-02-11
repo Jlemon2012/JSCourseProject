@@ -1,0 +1,59 @@
+<section class="admin-panel container">
+  <div class="sidemenu__container">
+    <ul>
+      <li><a href="#">Add items</a></li>
+      <li><a href="#">Orders</a></li>
+      <li><a href="#">Chat</a></li>
+    </ul>
+  </div>
+  <div class="additems__container">
+    <div class="additems__menu">
+      <h3>Categories</h3>
+      <ul class="additems__category">
+        <li>Printers</li>
+        <li>Monitors</li>
+        <li>Headsets</li>
+        <li>Storage</li>
+        <li>Processors</li>
+        <li>Mouse</li>
+      </ul>
+    </div>
+    <div class="additems__processing">
+      <div class="additems__printers hidden"></div>
+      <div class="additems__monitors hidden">
+        <h3>Monitors</h3>
+        <div class="existing__item">
+          <img
+            src="../img/products/headphone_hammer.png"
+            class="item__picture"
+          />
+          <p class="item__name">Headphones</p>
+          <p class="item__price">1000USD</p>
+        </div>
+        <button id="add__new--item">Add new item</button>
+        <div class="add__form--fields hidden">
+          <div class="form--field">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="form--field">
+            <label for="price">Price</label>
+            <input type="text" name="price" id="price" />
+          </div>
+          <div class="form--field">
+            <label for="picture">Picture</label>
+            <input type="file" name="picture" id="picture" />
+          </div>
+          <div class="form--field">
+            <label for="submit_button">Submit</label>
+            <input type="submit" name="submit_button" id="submit_button" />
+          </div>
+        </div>
+      </div>
+      <div class="additems__headsets hidden"></div>
+      <div class="additems__storage hidden"></div>
+      <div class="additems__processors hidden"></div>
+      <div class="additems__mouse hidden"></div>
+    </div>
+  </div>
+</section>
