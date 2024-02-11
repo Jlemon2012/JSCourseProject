@@ -8,10 +8,6 @@
     color: var(--text-clr);
 }
 
-.hidden {
-    display: none;
-}
-
 .existing__item {
     display: flex;
     flex-direction: row;

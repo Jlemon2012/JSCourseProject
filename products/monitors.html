@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=0"
+    />
+    <title>My shop</title>
+    <link rel="icon" href="#" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.js"
+      integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header data-include="/partials/header-partial.html"></header>
+    <main>
+      <section>
+        <div class="itemsmenu__container">
+          <ul>
+            <li><a href="#">Add items</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Chat</a></li>
+          </ul>
+        </div>
+        <div class="additems__monitors global__additems">
+          <h3>Monitors</h3>
+          <div class="existing__item">
+            <img
+              src="../img/products/headphone_hammer.png"
+              class="item__picture"
+            />
+            <p class="item__name">Headphones</p>
+            <p class="item__price">1000USD</p>
+          </div>
+          <button class="add__new--item">Add new item</button>
+          <div class="add__form--fields hidden">
+            <div class="form--field">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" />
+            </div>
+            <div class="form--field">
+              <label for="price">Price</label>
+              <input type="text" name="price" id="price" />
+            </div>
+            <div class="form--field">
+              <label for="picture">Picture</label>
+              <input
+                type="url"
+                name="picture"
+                id="picture"
+                placeholder="Enter URL"
+              />
+            </div>
+            <div class="form--field">
+              <input type="submit" name="submit_button" id="submit_button" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section data-include="/partials/footer-partial.html"></section>
+    </footer>
+    <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+.items__container {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+}
+
+.global__additems h3, .global__additems p, .global__additems label {
+    color: var(--text-clr);
+}
