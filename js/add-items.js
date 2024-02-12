@@ -6,6 +6,9 @@ $(document).ready(() => {
     const itemPriceField = $(".item__price");
     const itemPictureField = $(".item__picture");
     const placeToAdd = $(".list__all--items")
+    let nameOfItem;
+    let priceOfItem;
+    let pictureUrl;
 
     addNemItemButton.on("click", createForm);
     submitNewItemButton.on("click", submitItem);
@@ -18,21 +21,31 @@ $(document).ready(() => {
             let parsedValue = JSON.parse(storedValue);
             allItems.push(parsedValue);
         }
-    
-        return allItems;
+        for (let i=0; i<allItems.length; i++) {
+            if (allItems[i].category == "Printers") {
+                nameOfItem = allItems[i].item;
+                priceOfItem = allItems[i].price;
+                pictureUrl = allItems[i].image;
+            }
+        }
     }
 
     function updateDisplayedItems() {
+        getAllItems();
+
         let newDiv = $("<div>").addClass("existing__item");
-        let newPicture = $("<img>").addClass("item__picture").attr("src", "#");
-        let newName = $("<h4>").addClass("item__name");
-        let newPrice = $("<p>").addClass("item__price");
+        let newPicture = $("<img>").addClass("item__picture").attr("src", `${pictureUrl}`);
+        let newName = $("<h4>").addClass("item__name").text(nameOfItem);
+        let newPrice = $("<p>").addClass("item__price").text(priceOfItem);
+
 
         newDiv.append(newPicture, newName, newPrice);
 
         placeToAdd.append(newDiv);
 
         saveNewBlockToStorage();
+
+        allItems = [];
     }
 
     function saveNewBlockToStorage() {
@@ -55,9 +68,12 @@ $(document).ready(() => {
         if (blocks) {
             blocks.forEach(function(blockInfo) {
                 let newDiv = $("<div>").addClass("existing__item");
-                let newPicture = $("<img>").addClass("item__picture").attr("src", "#");
-                let newName = $("<h4>").addClass("item__name");
-                let newPrice = $("<p>").addClass("item__price");
+                let newPicture = $("<img>").addClass("item__picture").attr("src", `blockInfo.imageSrc`);
+                let newName = $("<h4>").addClass("item__name").text(blockInfo.nameElement);
+                let newPrice = $("<p>").addClass("item__price").text(blockInfo.priceElement);
+                // let newPicture = blockInfo.imageSrc;
+                // let newName = blockInfo.nameElement;
+                // let newPrice = blockInfo.priceElement;
 
                 newDiv.append(newPicture, newName, newPrice);
                 placeToAdd.append(newDiv);
@@ -77,7 +93,7 @@ $(document).ready(() => {
 
         const newItem = {
             id: setUniqueId(),
-            name: itemName,
+            item: itemName,
             price: itemPrice,
             image: itemImage,
             category: currentCategory
