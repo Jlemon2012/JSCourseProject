@@ -19,44 +19,39 @@
     <header data-include="/partials/header-partial.html"></header>
     <main>
       <section>
-        <div class="itemsmenu__container">
-          <ul>
-            <li><a href="#">Add items</a></li>
-            <li><a href="#">Orders</a></li>
-            <li><a href="#">Chat</a></li>
-          </ul>
-        </div>
-        <div class="additems__monitors global__additems">
-          <h3>Monitors</h3>
-          <div class="existing__item">
-            <img
-              src="../img/products/headphone_hammer.png"
-              class="item__picture"
-            />
-            <p class="item__name">Headphones</p>
-            <p class="item__price">1000USD</p>
+        <div class="items__container">
+          <div class="itemsmenu__container">
+            <ul>
+              <li><a href="#">Add items</a></li>
+              <li><a href="#">Orders</a></li>
+              <li><a href="#">Chat</a></li>
+            </ul>
           </div>
-          <button class="add__new--item">Add new item</button>
-          <div class="add__form--fields hidden">
-            <div class="form--field">
-              <label for="name">Name</label>
-              <input type="text" name="name" id="name" />
-            </div>
-            <div class="form--field">
-              <label for="price">Price</label>
-              <input type="text" name="price" id="price" />
-            </div>
-            <div class="form--field">
-              <label for="picture">Picture</label>
-              <input
-                type="url"
-                name="picture"
-                id="picture"
-                placeholder="Enter URL"
-              />
-            </div>
-            <div class="form--field">
-              <input type="submit" name="submit_button" id="submit_button" />
+          <div class="additems__monitors global__additems">
+            <h3>Monitors</h3>
+            <div class="list__all--items"></div>
+            <button class="add__new--btn">Add new item</button>
+            <div class="add__form--fields hidden">
+              <div class="form--field">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" />
+              </div>
+              <div class="form--field">
+                <label for="price">Price</label>
+                <input type="text" name="price" id="price" />
+              </div>
+              <div class="form--field">
+                <label for="picture">Picture</label>
+                <input
+                  type="url"
+                  name="picture"
+                  id="picture"
+                  placeholder="Enter URL"
+                />
+              </div>
+              <div class="form--field">
+                <input type="submit" name="submit_button" id="submit_button" />
+              </div>
             </div>
           </div>
         </div>
@@ -66,6 +61,6 @@
       <section data-include="/partials/footer-partial.html"></section>
     </footer>
     <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
-    <script type="module" src="./js/index.js"></script>
+    <script type="module" src="../js/add-items-monitors.js"></script>
   </body>
 </html>
